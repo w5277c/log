@@ -1,1 +1,1 @@
-My version of JSON for Java
+My version of logging for Java
