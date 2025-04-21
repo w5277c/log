@@ -55,6 +55,27 @@
    - Подробный вывод исключений с stack trace
    - Защита от ошибок при работе с файлами
 
+
+## Пример вывода
+   14:41:12.901[1] WRN Log level:PNC
+   14:41:12.933[1] INF Server_id:0x00000005, site_id:0x05, version:0.12
+   14:41:13.044[1] INF DB loading...
+   14:41:14.727[1] INF Current measures database(CMDB) enabled, sheduler:OFF
+   14:41:24.647[1] DBG DB.loaded controller [1] 0x42xxxxxxxxxxxxxx Дом LICENSE
+   14:41:24.649[1] DBG DB.loaded controller [0] 0x06xxxxxxxxxxxxxx
+   14:41:25.283[1] INF File db.bin updated
+   14:42:00.421[1] DBG DB.loaded owner w5277c@gmail.com
+   14:42:00.629[1] DBG Updated owner:admin
+   14:42:00.638[1] DBG DB.loaded user xxxxx, project:w5277c@gmail.com
+   14:42:00.638[1] INF DB load done
+   14:42:00.641[1] DBG MDB started
+   14:42:00.656[1] INF Starting network (wlink model)
+   14:42:00.665[1] INF WServer started on 5277
+   14:43:44.879[6E] DBG Active sessions quantity:0
+   14:43:44.898[6E] DBG Created session CLNT_SES:8287063221642836622 for user:admin, ip:127.0.0.1
+   14:43:44.909[6E] DBG set location:Location, id:1, Дом()
+   14:43:51.114[71] DBG set location:Location, id:4, DEXP()
+
 ## Возможные улучшения
 
 1. **Конфигурация**:
@@ -95,3 +116,5 @@
 
 ## Вывод
 Код представляет собой хорошо продуманный многопоточный логер с базовыми функциями. Он подойдет для многих проектов, но может потребовать доработки для использования в высоконагруженных системах или при необходимости более гибкой конфигурации.
+
+
